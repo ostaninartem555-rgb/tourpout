@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+client/public/downloads/*.apk
+client/android/.gradle/
+client/android/**/build/
+client/android/local.properties
+*.jks
+*.keystore
+
+client/public/downloads/*.idsig

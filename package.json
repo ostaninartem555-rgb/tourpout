@@ -1,0 +1,25 @@
+{
+  "name": "wavemusic",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c yellow,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "android:sync": "node scripts/sync-android.mjs",
+    "android:debug": "npm run android:sync && cd client/android && ./gradlew assembleDebug",
+    "android:release": "npm run android:sync && cd client/android && ./gradlew assembleRelease",
+    "test": "npm test -w server",
+    "android:apk": "npm run android:release && node scripts/package-apk.mjs && npm run build"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
