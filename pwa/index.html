@@ -13,6 +13,7 @@
 :root{color-scheme:dark;--bg:#0b0b0d;--card:#16161a;--accent:#ff5500;--muted:#8e8e93;--line:#ffffff12;--bottom:env(safe-area-inset-bottom,0px);font:16px system-ui,sans-serif;background:var(--bg);color:white}
 *{box-sizing:border-box}body{margin:0;user-select:none;-webkit-user-select:none}input{user-select:text;-webkit-user-select:text}button,input,a{-webkit-tap-highlight-color:transparent}button,input{font:inherit}button,a{touch-action:manipulation}button{border:0;color:inherit;background:none;cursor:pointer}button:disabled{opacity:.4;cursor:default}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}[hidden]{display:none!important}svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .shell{max-width:1100px;margin:auto;padding:calc(25px + env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) calc(155px + var(--bottom)) max(20px,env(safe-area-inset-left,0px))}.mast{display:flex;align-items:center;gap:11px;font-weight:750;letter-spacing:-.03em;margin-bottom:32px}.logo{display:grid;place-items:center;background:var(--accent);border-radius:13px;width:40px;height:40px;color:white}.mast .network{margin-left:auto;color:var(--muted);font-size:.8rem;font-weight:500;letter-spacing:0}.hero{position:relative;overflow:hidden;border:1px solid #ff550044;border-radius:26px;min-height:225px;padding:32px;display:flex;flex-direction:column;justify-content:end;background:radial-gradient(ellipse at right,#b1371d4d,transparent 62%),linear-gradient(115deg,#321611,#16161a 65%)}.hero::after{content:"";position:absolute;width:240px;aspect-ratio:1;right:-34px;top:-48px;border-radius:50%;background:repeating-radial-gradient(circle,#ff662a62 0 2px,transparent 3px 15px);transform:rotate(-25deg) scaleX(.7);pointer-events:none}.hero h1,.hero p,.hero button{position:relative;z-index:1}h1,h2,p{margin:0}h1{font-size:clamp(2rem,7vw,4rem);letter-spacing:-.065em;line-height:1}h2{font-size:1.22rem;letter-spacing:-.025em}p{color:var(--muted);line-height:1.5}.hero p{color:#e9b8a5;margin:12px 0 20px}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;background:#26262b;padding:11px 16px;min-height:44px;text-decoration:none;font-weight:650}.primary{background:var(--accent);color:#140600}.hero .button{align-self:start}.section{margin-top:30px}.section h2{margin-bottom:12px}.page-title{margin-bottom:20px}.form{display:flex;gap:8px}.form input{flex:1;min-width:0;border:1px solid var(--line);border-radius:12px;background:var(--card);color:white;padding:12px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.tabs button{background:var(--card);border:1px solid var(--line);padding:9px 13px;border-radius:999px;min-height:40px}.tabs [aria-pressed=true]{color:#ff8a54;border-color:#ff550066}.list{display:grid;gap:7px}.empty{padding:24px;border:1px dashed #ffffff24;border-radius:14px}.track{display:flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:13px;background:var(--card);padding:6px}.track.active{border-color:#ff55007a}.track-main,.now{display:flex;gap:10px;align-items:center;min-width:0;flex:1;text-align:left;padding:2px}.cover{width:45px;height:45px;display:grid;place-items:center;position:relative;overflow:hidden;flex:none;border-radius:9px;background:linear-gradient(145deg,#4f2619,#1f1d25);color:#ff8a54}.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.info{display:grid;gap:3px;min-width:0}.info strong,.info small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.info small{color:var(--muted)}.icon{width:42px;height:42px;display:inline-grid;place-items:center;flex:none;border-radius:12px;text-decoration:none}.icon:hover{background:#ffffff10}.icon[aria-pressed=true]{color:var(--accent)}.icon[aria-pressed=true] svg.heart{fill:currentColor}.dock{position:fixed;z-index:4;bottom:0;inset-inline:0;background:#101013f5;border-top:1px solid var(--line);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);padding:0 max(10px,env(safe-area-inset-right,0px)) var(--bottom) max(10px,env(safe-area-inset-left,0px))}.nav,.mini{max-width:1100px;margin:auto;display:flex;align-items:center}.nav{height:62px}.nav button{flex:1;display:grid;justify-items:center;gap:4px;color:var(--muted);font-size:.72rem;padding:5px 0}.nav [aria-current=page]{color:#ff7837}.mini{min-height:65px;gap:4px;border-bottom:1px solid var(--line);padding:7px 4px}.mini .cover{width:42px;height:42px}.mini-progress{height:2px;background:var(--accent);width:0;position:absolute;top:0;left:0}.settings{display:grid;gap:13px;max-width:620px}.settings>.button{justify-self:start}.status{min-height:1.5em}.full{position:fixed;z-index:6;inset:0;overflow:auto;background:radial-gradient(ellipse at top,#552315,#101014 62%);padding:calc(16px + env(safe-area-inset-top,0px)) 22px calc(24px + var(--bottom));animation:rise .22s ease-out}.full-inner{max-width:420px;margin:auto}.full header,.times,.controls{display:flex;align-items:center;justify-content:space-between}.full header{margin-bottom:12px;color:#f3c0aa}.full .cover{width:min(100%,43vh);height:auto;aspect-ratio:1;margin:0 auto 18px;border-radius:20px}.full .cover svg{width:28%;height:28%}.full h2{font-size:clamp(1.4rem,5vw,2.2rem);overflow-wrap:anywhere}.full p{margin:5px 0 16px}.full input{width:100%;accent-color:var(--accent);height:27px}.times{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}.controls{margin-top:13px}.controls .primary{width:60px;height:60px;border-radius:50%}.toast{position:fixed;z-index:8;bottom:calc(138px + var(--bottom));left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 28px);display:flex;align-items:center;gap:10px;padding:6px 8px 6px 14px;border:1px solid #ff550059;border-radius:13px;background:#2d201c;box-shadow:0 12px 28px #0008}.toast span{font-size:.85rem}.spin{animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes rise{from{transform:translateY(25px);opacity:.6}}@media(min-width:720px){.home-lists{display:grid;grid-template-columns:1fr 1fr;gap:22px}.shell{padding-inline:32px}}@media(max-width:380px){.shell{padding-inline:12px}.track .icon{width:34px}.hero{padding:21px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important}}
+.public-stats{font-size:.72rem;color:#bdb6c6;overflow-wrap:anywhere}#artist-summary{margin-bottom:12px}
 </style>
 </head>
 <body>
@@ -29,7 +30,7 @@
     <h1 class="page-title">Поиск</h1>
     <form class="form" id="search-form"><input id="query" type="search" aria-label="Трек или исполнитель" placeholder="Трек или исполнитель" maxlength="200" required><button class="button primary">Найти</button></form>
     <div class="tabs" id="sources" aria-label="Источники"><button value="all" aria-pressed="true">Все источники</button><button value="yt" aria-pressed="false">YouTube Music</button><button value="sc" aria-pressed="false">SoundCloud</button></div>
-    <p class="status" id="search-status" role="status"></p><div class="list" id="results"></div>
+    <p class="status" id="search-status" role="status"></p><p class="public-stats" id="artist-summary" hidden></p><div class="list" id="results"></div>
   </section>
   <section id="library" hidden>
     <h1 class="page-title">Медиатека</h1>
@@ -61,7 +62,7 @@
 <section class="full" id="full" role="dialog" aria-modal="true" aria-label="Сейчас играет" hidden>
   <div class="full-inner">
     <header><button class="icon" id="close-player" aria-label="Свернуть плеер" data-icon="down"></button><span>Сейчас играет</span><button class="icon" id="full-like" aria-label="В избранное" data-icon="heart"></button></header>
-    <div class="cover" id="full-cover"></div><h2 id="full-title"></h2><p id="full-artist"></p>
+    <div class="cover" id="full-cover"></div><h2 id="full-title"></h2><p id="full-artist"></p><p id="full-artist-stats" class="public-stats"></p>
     <input id="seek" type="range" min="0" max="0" step="0.1" value="0" aria-label="Перемотка">
     <div class="times"><span id="elapsed">0:00</span><span id="duration">0:00</span></div>
     <div class="controls"><button class="icon" id="shuffle" aria-label="Случайный порядок" aria-pressed="false" data-icon="shuffle"></button><button class="icon" id="repeat" aria-label="Повтор трека" aria-pressed="false" data-icon="repeat"></button><button class="icon" id="prev" aria-label="Предыдущий трек" data-icon="prev"></button><button class="icon primary" id="full-play" aria-label="Воспроизвести"></button><button class="icon" id="next" aria-label="Следующий трек" data-icon="next"></button><button class="icon" id="full-save" aria-label="Сохранить офлайн" data-icon="save"></button></div>
@@ -163,6 +164,8 @@ function normalize(payload, source, root) {
     const title = label(item?.title);
     if ((typeof id !== "string" && typeof id !== "number") || !String(id).trim() || !title) continue;
     const track = {
+      trackStats: item.trackStats,
+      artistStats: item.artistStats,
       id: String(id), title,
       source: ["yt", "sc"].includes(item.source) ? item.source : source === "sc" ? "sc" : "yt",
       artist: label(item.artist) || label(item.author) || label(item.channel) || "Неизвестный исполнитель",
@@ -250,6 +253,19 @@ function like(track) {
   renderLists();
   renderControls();
 }
+const decimal = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1, useGrouping: false });
+function formatCount(value) {
+  if (!Number.isFinite(value)) return "н/д";
+  if (value >= 1e9) return decimal.format(value / 1e9) + " млрд";
+  if (value >= 1e6) return decimal.format(value / 1e6) + " млн";
+  if (value >= 1e3) return decimal.format(value / 1e3) + " тыс.";
+  return String(value);
+}
+function artistSummary(stats) {
+  return "SoundCloud: " + formatCount(stats?.soundcloudPlays) + " просл. топ-треков, " +
+    formatCount(stats?.soundcloudFollowers) + " подп. · YouTube Music: " +
+    formatCount(stats?.youtubePlays) + " просмотров, " + (stats?.youtubeSubscribers || "н/д") + " подп.";
+}
 function renderList(id, tracks, message) {
   const root = $(id);
   if (!tracks.length) {
@@ -273,7 +289,14 @@ function renderList(id, tracks, message) {
     title.textContent = track.title;
     const artist = document.createElement("small");
     artist.textContent = track.artist;
-    info.append(title, artist);
+    const trackStats = document.createElement("span");
+    trackStats.className = "public-stats";
+    trackStats.textContent = "☁ SoundCloud: " + formatCount(track.trackStats?.soundcloudPlays) +
+      " · ▶ YouTube Music: " + formatCount(track.trackStats?.youtubePlays);
+    const artistStats = document.createElement("span");
+    artistStats.className = "public-stats";
+    artistStats.textContent = artistSummary(track.artistStats);
+    info.append(title, artist, trackStats, artistStats);
     play.append(cover, info);
     play.onclick = () => {
       queue = tracks.slice();
@@ -305,6 +328,9 @@ function renderLists() {
     renderList("recent", recent.slice(0, 10), "Здесь появятся прослушанные треки");
     renderList("home-favorites", favorites.slice(0, 10), "Добавьте треки в избранное");
   } else if (section === "search") {
+    const match = results.find(track => track.artist.toLowerCase() === $("query").value.trim().toLowerCase());
+    $("artist-summary").hidden = !match;
+    $("artist-summary").textContent = match ? match.artist + " · " + artistSummary(match.artistStats) : "";
     renderList("results", results, $("query").value.trim() ? "Нет треков для отображения" : "Введите название трека или имя исполнителя");
   } else if (section === "library") {
     renderList("library-list", library === "favorites" ? favorites : [...downloads.values()], library === "favorites" ? "Избранное пока пусто" : "Скачайте трек для прослушивания офлайн");
@@ -353,6 +379,7 @@ async function search() {
   const selected = source;
   $("search-status").textContent = "Поиск…";
   $("results").replaceChildren();
+  $("artist-summary").hidden = true;
   results = [];
   try {
     const response = await fetch(root + "/api/search?" + new URLSearchParams({q: query, source: selected}), {signal: controller.signal});
@@ -584,6 +611,7 @@ function renderTrack() {
     $(prefix + "-artist").textContent = current.artist;
     drawCover($(prefix + "-cover"), current);
   }
+  $("full-artist-stats").textContent = artistSummary(current.artistStats);
   mediaSessionUpdate();
   renderControls();
   updateProgress();
